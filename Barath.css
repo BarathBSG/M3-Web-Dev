@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Sego', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    display: block;
+}
+
+#TeamInfoBody{
+    height: 1000px;
+}
+
+#UNGoal2Body{
+    height: 1800px;
+}
+
+header{
+    text-align: center;
+    height: 125px;
+}
+
+header > h1{
+    line-height: 200%;
+    padding-top: 25px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    margin: 10px auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    text-align: center;
+    height: 60px;
+    padding-bottom: 15px;
+}
+
+.nav{
+    display: inline-block;
+    padding: 24px;
+}
+
+.mainNav{
+    height: 0;
+}
+
+.showNav{
+    height: 300px;
+}
+
+main{
+    margin: auto 15%;
+    border: 5px solid white;
+    padding: 16px;
+    border-radius: 5px;
+    padding-bottom: 66px;
+}
+
+main > h2{
+    text-align: center;
+}
+
+section{
+    padding: 20px 0;
+    background-color:cornsilk;
+    border-radius: 5px;
+}
+
+.members{
+    display: inline-block;
+    width: 47%;
+    background-color: rgb(255, 255, 255);
+    padding: 24px 11px;
+    margin: auto auto 20px 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+footer{
+    text-align: center;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a:link{
+    color: #000000;
+}
+footer a:hover{
+    color: #e8fff9;
+}
+footer a:visited{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: #3F2860;
+}
+a:visited{
+    color: #3F2860;
+}
+a:hover{
+    color: #0000ff;
+}
+
+.active{
+    background-color: #cfbeceab;
+}
+
+#hamburger{
+    display: none;
+}
+
+#EndHungerPhoto{
+    width: 25%;
+    height: 25%;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    float: left;
+    border: 3px solid #dea63a;
+}
+
+#UNGoal2Header{
+    padding: 5px;
+    font-style: italic;
+}
+
+#UNGoal2Desc{
+    margin-top: -5px;
+}
+
+.Tabs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.Tabs input[type="radio"] {
+    display: none;
+}
+
+.Tabs label{
+    padding: 20px;
+    background: rgb(227, 227, 227);
+    font-weight: bold;
+}
+
+.Tabs #tab1{
+    border-top-left-radius: 10px;
+}
+
+.Tabs #tab3{
+    border-top-right-radius: 10px;
+}
+
+.Tabs .tab{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    order: 1;
+    display: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Tabs .tab h2{
+    font-size: 25px;
+}
+
+.Tabs input[type="radio"]:checked + label + .tab{
+    display: block;
+}
+
+.Tabs input[type="radio"]:checked + label{
+    background-color: white;
+}
+
+.MemberPhotos{
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 3px solid slategray;
+}
+
+.ScrollingText{
+    white-space: nowrap; /*need this to keep lines boxing up*/
+    display: flex;
+    height: 50px;
+    word-wrap: break-word;
+
+    font-size: 15px;
+    color: rgb(1, 132, 1);
+    font-style: italic;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    animation: ScrollingText 60s infinite linear;
+}
+
+@keyframes ScrollingText{
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-260%);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header > h1{
+        display: inline-block;
+        line-height: 50%;
+    }
+    header{
+        height: 65px;
+    }
+    #hamburger{
+        display: block;
+        float: right;
+        padding: 12px;
+        height: 41px;
+        background-color: lightslategray;
+    }
+    .nav{
+        display: block;
+        width: 70%;
+        font-size: small;
+    }
+    main{
+        margin-top: 40px;
+    }
+    #mainNav{
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 20px;
+    }
+    .mainNav{
+        height: 0;
+        overflow: hidden;
+    }
+    .showNav{
+        height: 50px;
+        width: 100px;
+    }
+
+
+    footer{
+        background-color:lightslategrey;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #hamburger:hover{
+        background-color: #f4f0f4;
+    }
+
+
+    .active{
+        background-color: #cfbeceab;
+    }
+
+    .Tabs label{
+        width: 15%;
+        font-size: 15px;
+        text-align:
+         center;
+    }
+
+    .MemberPhotos{
+        width: 80%;
+    }
+
+    .ScrollingText{
+        padding-top: 10px;
+        margin-bottom: -60px;
+    }
+
+    #TeamInfoBody{
+        height: 1850px;
+    }
+    
+    #UNGoal2Body{
+        height: 2800px;
+    }
+}

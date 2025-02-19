@@ -1,0 +1,101 @@
+body{
+    background-color: whitesmoke;
+}
+
+header{
+background-color: lightslategray;
+}
+
+footer{
+    background-color: lightslategrey;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+main{
+    border-radius: 10px;
+    border: 5px solid slategrey;
+}
+
+#hamburger{
+    background-color: lightslategray;
+    font-size: 28px;
+}
+
+#hamburger:hover{
+    background-color: slategray;
+}
+
+
+
+
+
+
+li.nav{
+    border-radius: 5px;
+    padding: 30px;
+    background-color: lightgray;
+    line-height: 1;
+    width: 80px;
+}
+
+li.nav:hover{
+    color: lightslategray;
+}
+
+#mainNav > ul > li{
+    padding: 10px;
+    margin: auto auto;
+    width: 80px;
+}
+
+#mainNav{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    height: 50px;
+}
+
+nav{
+    text-align: center;
+    height: 60px;
+    padding-bottom: 15px;
+}
+
+.nav{
+    display: inline-block;
+    padding: 24px;
+}
+
+.mainNav{
+    height: 0px;
+}
+
+.showNav{
+    height: 300px;
+}
+
+li.nav.active{
+    background-color: lightslategray;
+}
+
+header > a > img{
+    width: 45%;
+    height: 90%;
+    filter: brightness(3);
+    /*contrast 10 darker ver of brightness 3*/
+    /*brightness 0 black ver*/
+    filter: brightness(0);
+    margin: 5px;
+}
